@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="semantic/dist/semantic.min.js"></script>    
+    <script src="waypoints/lib/noframework.waypoints.min.js"></script>
+    <script src="waypoints/lib/jquery.waypoints.min.js"></script>
+    
+</head>
+
+<style>
+    body{
+        padding:5rem;
+    }
+    #leftCol{
+        width: 50%;
+        float: left;
+    }
+    #rightCol{
+        width: 50%;
+        float: right;
+    }
+    #testBox{
+        width:50%;
+        overflow: scroll;
+    }
+    .entry{
+        width: 100%;
+        height: 1em;
+    }
+    .header{
+        height: 5rem;
+        position: fixed;
+        top: 0;
+        width: 100%; 
+        z-index: 1000;
+    }
+
+</style>
+<header class="header">
+    <div class="ui buttons">
+        <button class="ui button active" id="hereButton">Here</button>
+        <button class="ui button"id="thereButton">There</button>
+        <button class="ui button"id="whereButton">Where</button>
+    </div>
+        <!-- <div class="ui ordered steps">
+                <div class="active step">
+                  <div class="content">
+                    <div class="title"id="hereStep">Here</div>
+                    <div class="description">Praesent vel tortor non.</div>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="content" id="thereStep">
+                    <div class="title">There</div>
+                    <div class="description">Vestibulum ante ipsum primis in faucibus.</div>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="content"id="whereStep">
+                    <div class="title">Where</div>
+                    <div class="description">Aenean ac lobortis sem, at venenatis risus.</div>
+                  </div>
+                </div>
+              </div> -->
+</header>
+<body>
+<div id="testBox">
+    <div id="leftCol">
+        <p>
+            stuff
+        </p>
+        <div class="waypoint" id="test"> test </div>
+    </div>
+    <div id="rightCol">
+        <div class="waypoint" id="here">Here</div>
+        <p class="entry"> 1 </p>
+        <p class="entry"> 2 </p>
+        <p class="entry"> 0 </p>
+        <p class="entry"> 1 </p>
+        <p class="entry"> 1 </p>
+        <p class="entry"> 5 </p>
+        <p class="entry"> 1 </p>
+        <p class="entry"> 1 </p>
+        <p class="entry"> 1 </p>
+        <p class="entry"> 1 </p>
+        <p class="entry"> 1 </p>
+        <h1> filler
+             like
+                this
+
+                Nam sed bibendum turpis. Nulla tincidunt, justo congue viverra congue, metus erat eleifend justo, ut porttitor tellus ante
+        </h1>
+        <div class="waypoint" id="there">there</div>
+        <p id="test">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor non sem auctor maximus. Proin eleifend rhoncus odio, 
+            et euismod sapien sollicitudin vel. Mauris mollis placerat augue in imperdiet. Sed malesuada ri
+            sus pharetra tincidunt vestibulum. Vestibulum auctor scelerisque sodales. Proin cursus ante et enim lacinia,
+            eget iaculis justo lacinia. Nullam euismod neque at ipsum viverra interdum. Nulla vitae nunc arcu.
+             Vestibulum facilisis purus at ullamcorper fringilla. Etiam enim urna, finibus sit amet diam eu, 
+             maximus convallis lacus. Mauris ante orci, faucibus et ex quis, ullamcorper imperdiet lectus. 
+             Cras ac est eros. Integer ut tellus sit amet enim finibus maximus eget eu lacus. Etiam magna neque, 
+             posuere porttitor justo vitae, dictum accumsan est. Mauris auctor mi dui, quis dictum felis ornare quis. 
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis ullamcorper tellus sit amet lacus efficitur, in aliquam dui malesuada. Mauris ex sem, faucibus malesuada venenatis convallis, sagittis quis est. Vivamus molestie varius urna, sit amet placerat nunc ornare sit amet. Ut vehicula vulputate varius. Sed porta sapien quis dolor ultricies, eu semper dui faucibus. Aliquam orci risus, sollicitudin ac magna et, tincidunt tempor elit. Nam congue nulla quis elementum mollis. Sed sed ullamcorper quam. Suspendisse egestas nulla id condimentum ullamcorper. Ut et fringilla nibh, eget pretium leo. Phasellus fringilla lacinia mollis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis hendrerit malesuada. Nulla rutrum imperdiet lacus vitae egestas.
+                
+                Mauris orci nunc, viverra eget mollis ac, rhoncus sit amet justo. Aenean ac lobortis sem, at venenatis risus. Sed consectetur sodales libero eu porta. Sed posuere vehicula hendrerit. Praesent velit magna, auctor a lectus nec, interdum tincidunt felis. Morbi efficitur ullamcorper nibh quis eleifend. Fusce risus justo, bibendum sed sem id, accumsan venenatis dui. Ut diam ipsum, ullamcorper in facilisis non, convallis non enim. Vestibulum elementum eu dui nec varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis interdum facilisis. Suspendisse eget elementum est. Nullam elementum imperdiet cursus. Suspendisse volutpat nulla eu ipsum faucibus facilisis. Quisque pharetra orci nec dolor suscipit interdum blandit nec quam. Donec non condimentum diam.</p>
+        <div class="waypoint" id="where">Where</div>
+        <h2>Nam sed bibendum turpis. Nulla tincidunt, justo congue viverra congue, metus erat eleifend justo, 
+            ut porttitor tellus ante at erat. Nulla ultricies hendrerit orci a pretium. Maecenas blandit dolor tempus 
+            pretium porttitor. Donec semper dolor nulla, a egestas augue cursus in. Etiam faucibus id odio ut porttitor. 
+            Pellentesque et turpis consequat lectus tempus placerat vel non lectus. Vestibulum tempor gravida mi sed posuere. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et erat tortor. Duis lobortis efficitur vestibulum. 
+            In dolor ligula, dictum ut aliquet id, finibus ac libero.
+            Mauris orci nunc, viverra eget mollis ac, rhoncus sit amet justo. 
+            Mauris orci nunc, viverra eget mollis ac, rhoncus sit amet justo. 
+            </h2>
+    </div>
+</div>
+<script>
+     var waypoint1 = new Waypoint({
+        element: document.getElementById('there'),
+        handler: function() {
+          $('.ui button').removeClass('active'),
+          $('#thereButton').addClass('active')
+        }
+      })
+      var waypoint2 = new Waypoint({
+        element: document.getElementById('here'),
+        handler: function() {
+          $('.ui button').removeClass('active'),
+          $('#hereButton').addClass('active')
+        }
+      })
+      var waypoint3 = new Waypoint({
+        element: document.getElementById('where'),
+        handler: function() {
+          $('.ui button').removeClass('active'),
+          $('#whereButton').addClass('active')
+        }
+      })
+</script>
+</body>
+
+</html>
