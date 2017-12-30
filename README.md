@@ -2,4 +2,8 @@
 #### This repo will primarily contain techniques to stylistically display web pages using CSS, Sass, Javascript, jQuery, etc.
 List of Techniques:
 
-Redirected horizontal scrolling-
+Sticky Header - 
+
+Indexed Header - 
+
+Redirected horizontal scrolling -
