@@ -7,3 +7,5 @@ Sticky Header -
 Indexed Header - 
 
 Redirected horizontal scrolling -
+
+Restyling Input[type=file] - 
