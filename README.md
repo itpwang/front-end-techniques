@@ -9,3 +9,7 @@ Indexed Header -
 Redirected horizontal scrolling -
 
 Restyling Input[type=file] - 
+
+Accordion w/ jQuery -
+
+Accordion w/ CSS -
